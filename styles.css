@@ -1,15 +1,276 @@
-.col-3, .col-2, .col-6, .col-5, .col-10, .col-8{
-    border: 1px solid red;
+:root{
+    --button-background-color: #061437;
+    --fuente-color-oscuro: #061437;
+    --background-color-oscuro: #040e27;
+    --fuente-color: #fb7400;
+    --fuente-color-claro-footer: #63b0b2;
+    --background-about-us: #e6e6e6;
+    --background--color--aboutUs-1: #e6e6e6;
 }
-.container-fluid{
-    background-color: aliceblue;
+
+*{
+    scroll-behavior: smooth;
+}
+
+
+.header__form, .welcome, .aboutUs, .testimonials{
+    height: 100vh;
+}
+.ourProjetcs, .socialMedia{
+    height: 55vh;
+}
+
+.footer__contact{
+    height: 40vh;
+}
+.footer__final{
+    height: 20vh;
+}
+
+.header__form--container, .welcome__container, .aboutUs__container{
+    transform: translate(0px, 120px);
+}
+
+.ourProjetcs__container,.testimonials__container{
+    transform: translate(0px, 20px);
+}
+
+.socialMedia__container{
+    transform: translate(0px, 100px);
+}
+.footer__contact--container{
+    transform: translate(0px, 25px);
+}
+.footer__final--container{
+    transform: translate(0px, 25px);
+}
+
+/*COLORES*/
+
+.header{
+    background-color: #0d182e;
+}
+.header__container div h4 {
+    color: var(--fuente-color)
+}
+.header__container div p{
+    color: #fff
+}
+
+
+.header__nav--bar nav div ul li a{
+    color:#fb7400;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.header__nav--bar nav div ul li{
+    margin: 0px 10px 0px 10px;
+}
+.header__form{
+    background-color: grey;
+    background-position: center;
+    background-size: cover;
+}
+
+.header__form--container div h1, h4{
+    color: #fff
+}
+.header__form--container div h4{
+    color: #fff
+}
+
+.header__form--container--texto--presentacion{
+    margin: 35px 0 0 0;
+}
+.formulario{
+    background-color: #fff;
+    padding: 20px 10px 20px 10px;
+}
+
+.formulario h2{
+    color:var(--button-background-color)
+}
+
+.formulario div input{
+    border: unset;
+    border-bottom: 1px solid gray;
+    border-radius: unset;
+}
+.formulario div select{
+    border: unset;
+    border-bottom: 1px solid gray;
+    border-radius: unset;
+}
+.formulario div textarea{
+    border: unset;
+    border-bottom: 1px solid gray;
+    border-radius: unset;
+    resize: unset;
+}
+.formulario div input:focus{
+    border: 1px solid red ;
+}
+.formulario--boton--send{
+    background-color: var(--button-background-color);
+    color: #fff;
+    font-weight: 800;
+}
+
+.welcome__container div h6{
+    color: var(--fuente-color)
+}
+.welcome__container div h1{
+    color:var(--fuente-color-oscuro)
+}
+
+.welcome__container--longCopy{
+    font-size: 110%;
+    font-weight: 600;
+}
+
+.aboutUs{
+    background-color: var(--background-about-us);
+}
+.aboutUs__container--firstChild h6, .aboutUs__container--secondaryChild h6{
+    color: var(--fuente-color);
+}
+
+.aboutUs__container--firstChild h1, .aboutUs__container--secondaryChild h1{
+    color: var(--fuente-color-oscuro);
+}
+.aboutUs__container--firstChild p:nth-child(3){
+    color: var(--fuente-color-oscuro);
+    font-weight: 600;
+}
+.aboutUs__container--buttons button{
+    background-color: var(--fuente-color);
+}
+.aboutUs__container--longCopy{
+    border-radius: 15px;
+    background: #e6e6e6;
+    box-shadow:  -5px -5px 15px #b3b3b3,
+             5px 5px 15px #ffffff;
+
+             margin: 25px 0 25px 0;
+             padding: 0 20px 0 20px;         
+}
+.about__cards--1{
+    background-color: var(--background--color--aboutUs-1);
+}
+.about__cards--1 div:nth-child(1), .about__cards--2 div:nth-child(1), .about__cards--3 div:nth-child(1){
+    
+    margin: 0 30px 0 0;
+}
+.about__cards--2{
+    background-color: var(--fuente-color);
+}
+.about__cards--3{
+    background-color: var(--button-background-color);
+}
+
+.ourProjetcs__container div:nth-child(1) p{
+    color: var(--fuente-color); 
+    font-weight: 500;  
+}
+
+.ourProjetcs__container div:nth-child(1) h1{
+    color: #fff;
+}
+ .ourProjetcs{
+     background-color: var(--button-background-color);
+ }
+
+ .ourProjetcs__container--gallery div{
+     margin: 1px;
+ }
+
+ .ourProjetcs__container--button{
+    margin: 30px 0 0 0;
+}
+
+.testimonials__container div:nth-child(1) {
+    text-align: center;
+}
+.testimonials__container .row{
+    height: 75vh;
+}
+.testimonials__container--first-child, .testimonials__container--second-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia__container--icons div ion-icon{
+    font-size: 80px;
+    color: var(--fuente-color-oscuro);
+}
+
+.socialMedia__container div:nth-child(1) h6{
+    color: var(--fuente-color);
+}
+
+.socialMedia__container div:nth-child(1) h1{
+    color: var(--fuente-color-oscuro);
+}
+
+.socialMedia__container--newsletter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 50px 0 0 0;
+    padding: 20px 0 20px 0;
+    background-color: var(--fuente-color);
+    border-radius: 5px;
+}
+.socialMedia__container--newsletter--email{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.footer__contact{
+    background-color: var(--button-background-color);
+}
+.footer__contact--container div ul h4, li{
+    color: #fff;
+    list-style: none;
+}
+
+.footer__contact--container div ul{
+    line-height: 2;
+}
+.footer__contact--container__socialMedia{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+}
+.footer__contact--container__socialMedia li{
+    border: 1px solid #fff;
+    padding: 8px;
+    margin: 0 5px 0 0;
+}   
+
+.footer__final{
+    background-color: var(--background-color-oscuro);
+}
+.footer__final--container div p{
+    color: #fff;
+    text-align: center;
+}
+.footer__final--container div p span{
+    color: var(--fuente-color);
+}
+.footer__final--container div p a{
+    color: var(--fuente-color-claro-footer);
 }
 .upper{
     text-transform: uppercase;
 }
-.hero{
+/* .hero{
     height: 100vh;
-}
+} */
 .formulario{
     padding: 10px;
 }

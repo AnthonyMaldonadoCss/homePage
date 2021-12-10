@@ -12,9 +12,10 @@
     <title>HomePage Test</title>
 </head>
 <body>
-    <div class="container-fluid">
+
+<div class="container-fluid header">
         
-        <div class="container">
+    <div class="container header__container">
             
             <div class="row">
                 
@@ -58,48 +59,50 @@
                         <p>Call us now 24/7 Customer Support</p>
                     </div>
                 </div>
-            
+            </div>
                 
-        </div>
+</div>
 
     </div>
     
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container header__nav--bar">
+        <nav class="navbar navbar-expand-lg bg-light">
             <div class="nav justify-content-center navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About us</a>
+                  <a class="nav-link" href="#welcome">About us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Services</a>
+                  <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Gallery</a>
+                  <a class="nav-link" href="#gallery">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#contacUs">Contact Us</a>
                   </li>
               </ul>
             </div>
           </nav>
     </div>
 
-<section class="container-fluid hero">
-    <div class="container">
+<section  class="container-fluid header__form">
+    <div id="home" class="container header__form--container">
         <div class="row">
-            <div class="col-6">
+            
+            <div class="col-7 header__form--container--texto--presentacion">
                 <h1>We create thed desired Home for You</h1>
                 <div class="col-13">
                     <h4>Contact us to find out your ideas and build them together</h4>
                 </div>
             </div>
-            <div class="col-6">
+            
+            <div class="col-5">
                 
-                <div class="containter formulario">
+                <div class="container formulario">
                     <h2>Make a Reservation</h2>
                 <form>
                     <div class="form-group">
@@ -131,7 +134,7 @@
                         <textarea name="form" id=""cols="27" rows="2" placeholder="Mensaje" class="col-12" ></textarea>
                     </div>
                     
-                    <button type="submit" class="btn btn-primary col-12">SEND</button>
+                    <button type="submit" class="btn  col-12 formulario--boton--send">SEND</button>
                   </form>
                 </div>
                 
@@ -140,23 +143,23 @@
     </div>
 </section>
 
-<section class="container-fluid about">
-    <div class="container">
+<section class="container-fluid welcome">
+    <div id="welcome" class="container welcome__container">
         <div class="row">
-                <div class="col-12 col-md-6">
-                    <img width="450" class="rounded float-left" src="resources/img/about.jpg" alt="about">
+                <div class="col-12 col-md-5">
+                    <img height="520" width="400" class="rounded float-left" src="resources/img/about.jpg" alt="about">
                 </div>
-                <div class="col-6 col-md-6">
-                    <h5>welcome to construccion company</h5>
+                <div class="col-6 col-md-7">
+                    <h6>welcome to construccion company</h6>
                     <h1>why work whit us?</h1><br/>
                     
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center welcome__container--longCopy">
                         <div class="col-7">
                             <p>We are a company with highly qualified and responsible personnel who will perform the best jobs for your home</p>
                         </div>
                         <div class="col-7 d-flex">
                             <p>Quality Construccion</p>
-                            <img width="125" class="img-thumbnail" src="resources/img/work-4.jpg" alt="work4">
+                            <img width="80" class="img-thumbnail" src="resources/img/work-4.jpg" alt="work4">
                         </div>
                         <div class="col-7 d-flex">
                             <p>Professional Llability</p>
@@ -174,25 +177,26 @@
     </div>
 </section>
 
-<section class="container-fluid">
-    <div class="container">
+<section class="container-fluid aboutUs">
+    <div id="aboutUs" class="container aboutUs__container">
         
 
-        <div style="border: 1px red solid;" class="row">
+        <div  class="row">
         
-            <div style="border: 1px red solid;" class="col-6">
-                <p>About Us</p>
+            <div  class="col-7 aboutUs__container--firstChild">
+                <h6>About Us</h6>
                 <h1>Best Provider for industrial Services</h1>
                 <p>We are a unique company dedicated to our clients</p>
             
-                <div class="row justify-content-between buttons">
-                    <div class="col-4"><p>Our Mission</p></div>
-                    <div class="col-4"><p>Our Vision</p></div>
-                    <div class="col-4"><p>Our Value</p></div>
+                <div class="row justify-content-around buttons aboutUs__container--buttons">
+                    <button type="submit" class="btn col-3 ">Our Mission</button>
+                    <button type="submit" class="btn col-3 ">Our Vision</button>
+                    <button type="submit" class="btn col-3 ">Our Value</button>
+                    
                 </div>
 
-                <div class="row">
-                    <div class="col-12">
+                <div class="row justify-content-center">
+                    <div class="col-11 aboutUs__container--longCopy">
                         <p>We are an expert group in architectural desing and interior desing with a residential approach,
                             where we generate creative, authentic and innovate solutions, achieving results that exceed the expectations
                             of each client.
@@ -201,19 +205,19 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-12">
-                        <button type="button" class="btn btn-secondary">Secondary</button>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-secondary">Contact Us!</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-6 ">
-                <p>Services</p>
+            <div id="services" class="col-5 aboutUs__container--secondaryChild ">
+                <h6>Services</h6>
                 <h1>Know what we offer you</h1><br />
 
-                <div style="border: 1px red solid;" class="col-9 about__cards">
+                <div  class="col-9 about__cards about__cards--1">
                     <div>
-                        <img width="125" src="resources/img/work-7.jpg" alt="">
+                        <img width="50" src="resources/img/desing-color-fan-min.png" alt="">
                     </div>
                     <div>
                         <h4>
@@ -224,16 +228,16 @@
                         </p>
                     </div>
                 </div>
-                <div style="border: 1px red solid;" class="col-9 about__cards">
-                    <div><img width="125" src="resources/img/work-7.jpg" alt=""></div>
+                <div  class="col-9 about__cards about__cards--2">
+                    <div><img width="50" src="resources/img/iconmonstr-wrench-25-120.png" alt=""></div>
                     <div>
                         <h4>Plumbing</h4>
                         <p>We help you repair your plumbing. Our service is of quality</p>
                     </div>
                 </div>
                 
-                <div style="border: 1px red solid;" class="col-9 about__cards">
-                    <div><img width="125" src="resources/img/work-7.jpg" alt=""></div>
+                <div style="border: 1px red solid;" class="col-9 about__cards about__cards--3">
+                    <div><img width="50" src="resources/img/paint-min.png" alt=""></div>
                     <div>
                         <h4>Painting</h4>
                         <p>Painting your house is a task that we can do for you, in a short time</p>
@@ -244,63 +248,61 @@
     </div>
 </section>
 
-<section class="container-fluid">
+<section class="container-fluid ourProjetcs">
     
-    <div style="border: 1px red solid;" class="container">
-        <div class="row">
+    <div id="gallery" class="container ourProjetcs__container">
+        <div  class="row">
             <div class="col-sm">
                 <p>our projetcs</p>
                 <h1>know what we do</h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col"><img width="150" src="resources/img/person_2.jpg" alt=""></div>
-            <div class="col"><img width="150" src="resources/img/person_2.jpg" alt=""></div>
-            <div class="col"><img width="150" src="resources/img/person_2.jpg" alt=""></div>
-            <div class="col"><img width="150" src="resources/img/person_2.jpg" alt=""></div>
-            <div class="col"><img width="150" src="resources/img/person_2.jpg" alt=""></div>
+        <div class="row justify-content-center ourProjetcs__container--gallery">
+            <div class=""><img width="150" src="resources/img/person_2.jpg" alt=""></div>
+            <div class=""><img width="150" src="resources/img/person_2.jpg" alt=""></div>
+            <div class=""><img width="150" src="resources/img/person_2.jpg" alt=""></div>
+            <div class=""><img width="150" src="resources/img/person_2.jpg" alt=""></div>
+            <div class=""><img width="150" src="resources/img/person_2.jpg" alt=""></div>
 
         </div>
 
-        <div class="row">
-            <div class="container">
-                <div class="col-12">
+        <div  class="row justify-content-center ourProjetcs__container--button">
+                <div  class="">
                     <button type="button" class="btn btn-secondary">View Gallery</button>
                 </div>
-            </div>
         </div>
     </div>
 
 
 </section>
 
-<section class="container-fluid">
-<div class="container">
+<section class="container-fluid testimonials">
+<div  class="container testimonials__container">
     <div class="row">
-        <div class="col-6">
+        <div  class="col-5 testimonials__container--first-child">
             <p>view testimonials</p>
             <h1>FOR US IT IS VERY IMPORTANT TO KNOW THE OPINIONS OF OUR CLIENTS</h1>
         </div>
-        <div class="col-6">
-            <video width="400" muted  src="resources/video/review-1-v.mp4"></video>
-            <div class="row">
-                <div class="col-4">
-                    <button type="button" class="btn btn-secondary">View Gallery</button>
-                </div>
+        <div  class="col-7 testimonials__container--second-child">
+            <div>
+                <video width="400" height="500" muted  src="resources/video/review-1-v.mp4"></video>    
             </div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-secondary">JEFF FRESHMAN</button>
+                </div>
         </div>
     </div>
 </div>
 </section>
 
-<section class="container-fluid">
-    <div class="container">
+<section class="container-fluid socialMedia">
+    <div id="contacUs"  class="container socialMedia__container">
         <div class="row">
             <div class="col-6">
-                <p>OUR SOCIAL MEDIA</p>
+                <h6>OUR SOCIAL MEDIA</h6>
                 <h1>Follow us on Social Media</h1>
             </div>
-            <div class="row">
+            <div class="row socialMedia__container--icons ">
                 <div class="col">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </div>
@@ -317,25 +319,28 @@
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </div>
             </div>
-            <div class="col-12 d-flex">
+            <div   class="socialMedia__container--newsletter col-12">
                 <h3>
                     Subscribe to our newsletter
                 </h3>
-                <input type="email" placeholder="Enter email addrees">
-                <button type="button" class="btn btn-warning">Warning</button>
-
+                
+                <div class="socialMedia__container--newsletter--email">
+                    <input type="email" placeholder="Enter email addrees">
+                    <button type="button" class="btn btn-warning">Warning</button>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 
-<section class="container-fluid footer">
-<div class="container">
-    <div class="row">
-        <div class="col-4">
-            <h4>Office Contact</h4>
+<section class="container-fluid footer__contact">
+<div class="container footer__contact--container">
+    <div class="row justify-content-center">
+        <div   class="col-4">
+            
             <ul>
+                <h4>Office Contact</h4>
                 <li>
                     <ion-icon name="location"></ion-icon> 123 Street, New York, USA
                 </li>
@@ -345,7 +350,7 @@
                 <li>
                     <ion-icon name="call"></ion-icon> info@example.com
                 </li>
-                <div class="d-flex">
+                <div  class="footer__contact--container__socialMedia">
                     <li><ion-icon name="logo-twitter"></ion-icon></li>
                     <li><ion-icon name="logo-facebook"></ion-icon></li>
                     <li><ion-icon name="logo-youtube"></ion-icon></li>
@@ -355,9 +360,10 @@
             </ul>
         </div>
     
-        <div class="col-4">
-            <h4>Services Areas</h4>
+        <div  class="col-4">
+            
             <ul>
+                <h4>Services Areas</h4>
                 <li>
                     <ion-icon name="chevron-forward"></ion-icon> Building Construccion
                 </li>
@@ -376,9 +382,10 @@
             </ul>
         </div>
     
-        <div class="col-4">
-            <h4>Useful Pages</h4>
+        <div  class="col-4">
+            
             <ul>
+                <h4>Useful Pages</h4>
                 <li>
                     <ion-icon name="chevron-forward"></ion-icon> About Us
                 </li>
@@ -397,10 +404,10 @@
 </div>
 </section>
 
-<section class="container-fluid">
-    <div class="container">
-        <div style="border: 1px red solid;" class="row justify-content-center">
-            <div style="border: 1px red solid;" class="col-5">
+<section class="container-fluid footer__final">
+    <div class="container footer__final--container">
+        <div  class="row justify-content-center">
+            <div  class="col-5">
                 <p>&#9400 Copyright <span>Company Name</span>. All Rights Reserved</p>
                 <p>This website was desingned and Developed by <a href="#">Joseilvera.com</a> </p>
 
