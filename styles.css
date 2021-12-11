@@ -1,5 +1,6 @@
 :root{
     --button-background-color: #061437;
+    --background-color-formulario: #ffffffbd;
     --fuente-color-oscuro: #061437;
     --background-color-oscuro: #040e27;
     --background-color-oscuro-hero: #040e2793;
@@ -26,7 +27,7 @@
     height: 40vh;
 }
 .footer__final{
-    height: 20vh;
+    height: 30vh;
 }
 .header__container{
     padding: 20px 0 15px 0 ;
@@ -119,8 +120,11 @@
     margin: 35px 0 0 0;
 }
 .formulario{
-    background-color: #fff;
+    background-color: var(--background-color-formulario);
     padding: 20px 10px 20px 10px;
+}
+.formulario input, .formulario select, .formulario textarea{ 
+    background-color: transparent;
 }
 
 .formulario h2{
@@ -186,9 +190,9 @@
     color: var(--fuente-color-oscuro);
     font-weight: 600;
 }
-.aboutUs__container--buttons button{
+/* .aboutUs__container--buttons button{
     background-color: var(--fuente-color);
-}
+} */
 .aboutUs__container--button{
     display: flex;
     justify-content: center;
@@ -460,9 +464,15 @@
     .testimonials__container--first-child h1{
         font-size: 130%;
     }
+    .testimonials__container--first-child h1{
+        font-weight: 600;
+    }
     .testimonials__container--second-child video{
         width: 200px;
         height: 200px;
+    }
+    .testimonials__container--second-child--button{
+        background-color: var(--fuente-color);
     }
     .socialMedia{
         height: 80vh;
@@ -495,14 +505,32 @@
         text-align: left;
     }
     .footer__final{
-        height: 30vh;
+        height: 35vh;
+    }
+    .footer__final--container div div{
+        text-align: center;
     }
 }
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
-    *{
-        color: red;
+    
+    .header__nav--bar--brand{
+        background-color: var(--button-background-color);
     }
+    .header__nav--bar--list ul li{
+        transition: all .3s;
+    }
+    .header__nav--bar--list ul li:hover{
+        border-bottom: 2px solid var(--fuente-color);
+    }
+
+    .header__container--4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
  }
 
  
@@ -511,18 +539,6 @@
  
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    .welcome__container div img{
-        width: 200px;
-        height: 200px;
-    }
- }
-
- 
- 
- 
- 
- /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) { 
     
     .header__nav--bar--brand{
         background-color: var(--button-background-color);
@@ -534,8 +550,85 @@
         border-bottom: 2px solid var(--fuente-color);
     }
     
+    .welcome__container div img{
+        width: 200px;
+        height: 200px;
+    }
+    .header__container--4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .welcome{
+        height: 180vh;
+    }
+    .aboutUs{
+        height: 150vh;
+    }
+    .ourProjetcs{
+        height: 100vh;
+    }
+    /* .testimonials{
+        height: 100vh;
+    } */
+    .testimonials__container{
+        height: 100vh;
+    }
+    .testimonials__container .row {
+        padding: 80px 0 0 0;
+    }
+    .socialMedia{
+        height: 100vh;
+    }
+    .socialMedia__container--icons{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .socialMedia__container--icons div ion-icon{
+        font-size: 320%;
+    }
+    .footer__contact{
+        height: 60vh;
+    }
+    .footer__final{
+        height: 30vh;
+    }
+    .footer__final--container div div{
+        text-align: center;
+    }
+ }
+
+ 
+ 
+ 
+ 
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1499.98px) { 
+    
+    .header__nav--bar--brand{
+        background-color: var(--button-background-color);
+    }
+    .header__nav--bar--list ul li{
+        transition: all .3s;
+    }
+    .header__nav--bar--list ul li:hover{
+        border-bottom: 2px solid var(--fuente-color);
+    }
+    .header__container--row div p{
+        font-size: 90%;
+    }
+    .header__container--row div h4{
+        font-size: 130%;
+    }
+    
     .welcome {
         height: 120vh;
+    }
+    .welcome__container--row div img{
+        height: 200;
+        width: 100;
     }
     
     .welcome__container--row div:nth-child(1) img {
@@ -557,6 +650,10 @@
         height: 120vh;
     }
 
+    .aboutUs__container--buttons button:nth-child(1) {
+        background-color: var(--fuente-color);
+    }
+
     .ourProjetcs{
         height: 70vh;
     }
@@ -566,12 +663,18 @@
     .testimonials__container {
         transform: translate(0px, 50px);
     }
+    .testimonials__container--first-child h1{
+        font-weight: 600;
+    }
     .testimonials__container--second-child video{
         width: 250px;
         height: 250px;
     }
     .socialMedia{
         height: 100vh;
+    }
+    .testimonials__container--second-child--button{
+        background-color: var(--fuente-color);
     }
 
     .socialMedia__container--icons{
@@ -587,4 +690,26 @@
     .socialMedia__container--newsletter--email .mobile{
         display: none;
     }
+    .socialMedia__container--newsletter--email input{
+        font-size: 80%;
+    }
+    .socialMedia__container--newsletter h3{
+        font-size: 120%;
+        margin: unset;
+    }
+    .socialMedia__container--newsletter{
+        align-items: center;
+    }
+    .footer__final{
+        height: 30vh;
+    }
+    .footer__final--container div div{
+        text-align: center;
+    }
+    .footer__contact--container div{
+        font-size: 90%;
+    }
+    .footer__final--container div div{
+        font-size: 80%;
+        line-height: 1;    }
 }
