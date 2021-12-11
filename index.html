@@ -9,6 +9,12 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!--Fonts Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <title>HomePage Test</title>
 </head>
 <body>
@@ -17,28 +23,28 @@
         
     <div class="container header__container">
             
-            <div class="row">
+            <div class="row header__container--row">
                 
             
-                <div class="col-2">
+                <div  class="col-12 col-sm-12 col-xl-4 col-lg-3">
                     <img src="resources/img/LOGO-many.png" width="150" class="img-thumbnail" alt="silvera">
-                  </div>
-                    <div class="col-1">
+                </div>
+                    <!-- <div class="col-xs-1 col-1">
 
-                    </div>
+                    </div> -->
     
                 
-                    <div class="col-3">
-                        <h4>Opening Hour:</h4>
-                        <p>Mon - Sat 8:00 - 17:30, Sunday - <span class="upper">closed</span></p>
-                    </div> 
+                <div  class="col-12 col-sm-4 col-lg-2 col-xl-3">
+                    <h4>Opening Hour:</h4>
+                    <p>Mon - Sat 8:00 - 17:30, Sunday - <span class="upper">closed</span></p>
+                </div> 
             
-                    <div class="col-1">
+                    <!-- <div class="col-xs-1 col-sm-1 col-1">
                         
             
-                    </div>
+                    </div> -->
         
-                <div class="col-2">
+                <div  class="col-12 col-sm-4 col-lg-3 col-xl-4 header__container--3">
                     <div>
                         <h4>Follow us</h4>
                         <div>
@@ -50,7 +56,7 @@
                     </div>
                 </div>
 
-                <div class="col-3">
+                <div  class="col-12 col-sm-4 col-lg-4 col-xl-4 header__container--4">
                     <div>
                         <h4>Free Call</h4>
                         <p>+1 234 456 78910</p>
@@ -60,17 +66,17 @@
                     </div>
                 </div>
             </div>
-                
+        </div>       
 </div>
 
-    </div>
     
-    <div class="container header__nav--bar">
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="nav justify-content-center navbar-collapse" id="navbarNav">
+    
+    <div class="header__nav--bar">
+        <nav class="navbar navbar-nav navbar-expand-sm bg-light">
+        <div class="nav justify-content-center navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#welcome">About us</a>
@@ -89,85 +95,104 @@
           </nav>
     </div>
 
-<section  class="container-fluid header__form">
+<section   class="container-fluid header__form">
+    
+    <video id="background-video" autoplay loop muted >
+        <source src="resources/video/hero-background-v.mp4" type="video/mp4">
+    </video>
+
     <div id="home" class="container header__form--container">
+
         <div class="row">
             
-            <div class="col-7 header__form--container--texto--presentacion">
+            <div class="col-12 col-sm-5 col-md col-lg-6 header__form--container--texto--presentacion">
                 <h1>We create thed desired Home for You</h1>
                 <div class="col-13">
                     <h4>Contact us to find out your ideas and build them together</h4>
                 </div>
             </div>
             
-            <div class="col-5">
+            <div class="col-12 col-sm-5 col-lg-6 header__form--container--formulario">
                 
                 <div class="container formulario">
                     <h2>Make a Reservation</h2>
-                <form>
-                    <div class="form-group">
-                        <!-- <label for="inputAddress">Name</label> -->
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Name">
-                      </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <!-- <label for="inputEmail4">Email</label> -->
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <!-- <label for="inputPassword4">Telephone</label> -->
-                        <input type="tel" class="form-control" id="inputPassword4" placeholder="Telephone">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <!--<label for="inputAddress">Address</label>-->
-                      <input type="date" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                    <div class="form-group">
-                        <!--<label for="inputState">State</label>-->
-                        <select id="inputState" class="form-control">
-                          <option selected>Choose a service</option>
-                          <option>...</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="form" id=""cols="27" rows="2" placeholder="Mensaje" class="col-12" ></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn  col-12 formulario--boton--send">SEND</button>
+                    <form>
+                        <div class="form-group">
+                            <!-- <label for="inputAddress">Name</label> -->
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Name">
+                        </div>
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <!-- <label for="inputEmail4">Email</label> -->
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <!-- <label for="inputPassword4">Telephone</label> -->
+                            <input type="tel" class="form-control" id="inputPassword4" placeholder="Telephone">
+                        </div>
+                        </div>
+                        <div class="form-group">
+                        <!--<label for="inputAddress">Address</label>-->
+                        <input type="date" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <!--<label for="inputState">State</label>-->
+                            <select id="inputState" class="form-control">
+                            <option selected>Choose a service</option>
+                            <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="form" id=""cols="27" rows="2" placeholder="Mensaje" class="col-12" ></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn  col-12 formulario--boton--send">SEND</button>
                   </form>
                 </div>
-                
             </div>
         </div>
     </div>
 </section>
 
-<section class="container-fluid welcome">
+<section style="display: none;" class="container-fluid welcome">
     <div id="welcome" class="container welcome__container">
-        <div class="row">
-                <div class="col-12 col-md-5">
-                    <img height="520" width="400" class="rounded float-left" src="resources/img/about.jpg" alt="about">
+        <div class="row welcome__container--row">
+                
+                <div class="col-12 col-md-5 col-lg-5">
+                    <img  class="rounded float-left" src="resources/img/about.jpg" alt="about">
                 </div>
-                <div class="col-6 col-md-7">
-                    <h6>welcome to construccion company</h6>
-                    <h1>why work whit us?</h1><br/>
+                
+                
+                <div class="col-12 col-md-7 col-lg-7 ">
                     
-                    <div class="row justify-content-center welcome__container--longCopy">
-                        <div class="col-7">
+                    <div class="col-12 col-lg-10">
+                        <h6>welcome to construccion company</h6>
+                        <h1>why work whit us?</h1><br/>
+                    </div>
+                    
+                    
+                    <div class="row welcome__container--longCopy">
+                        <div class="col-12 col-lg-10">
                             <p>We are a company with highly qualified and responsible personnel who will perform the best jobs for your home</p>
                         </div>
-                        <div class="col-7 d-flex">
-                            <p>Quality Construccion</p>
-                            <img width="80" class="img-thumbnail" src="resources/img/work-4.jpg" alt="work4">
+                        <div class="col-6 col-lg-12 d-flex">
+                            <div class="col-12 col-lg-12 welcome__container--longCopy--img ">
+                                <p>Quality Construccion</p>
+                                <img  class=" img-thumbnail" src="resources/img/work-4.jpg" alt="work4">
+                            </div>
                         </div>
-                        <div class="col-7 d-flex">
-                            <p>Professional Llability</p>
-                            <img width="125" class="img-thumbnail" src="resources/img/work-5.jpg" alt="">
+                        <div  class="col-6 col-lg-12 d-flex">
+                            <div class="col-12 col-lg-12 welcome__container--longCopy--img ">
+                                <p>Professional Llability</p>
+                                <img  class="img-thumbnail" src="resources/img/work-5.jpg" alt="">
+                            </div>
+                            
                         </div>
-                        <div class="col-7 d-flex">
-                            <p>Dedicated To clients</p>
-                            <img width="125" class="img-thumbnail" src="resources/img/work-7.jpg" alt="">
+                        <div class="col-12 col-lg-12 d-flex">
+                            <div class="col-12 col-lg-12 welcome__container--longCopy--img">
+                                <p>Dedicated To clients</p>
+                                <img  class="img-thumbnail" src="resources/img/work-7.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                     
@@ -177,21 +202,21 @@
     </div>
 </section>
 
-<section class="container-fluid aboutUs">
+<section   class="container-fluid aboutUs">
     <div id="aboutUs" class="container aboutUs__container">
         
 
         <div  class="row">
         
-            <div  class="col-7 aboutUs__container--firstChild">
+            <div  class="col-12 col-lg-7 aboutUs__container--firstChild">
                 <h6>About Us</h6>
                 <h1>Best Provider for industrial Services</h1>
                 <p>We are a unique company dedicated to our clients</p>
             
                 <div class="row justify-content-around buttons aboutUs__container--buttons">
-                    <button type="submit" class="btn col-3 ">Our Mission</button>
-                    <button type="submit" class="btn col-3 ">Our Vision</button>
-                    <button type="submit" class="btn col-3 ">Our Value</button>
+                    <button type="submit" class="btn col-5 col-lg-3">Our Mission</button>
+                    <button type="submit" class="btn col-5 col-lg-3">Our Vision</button>
+                    <button type="submit" class="btn col-5 col-lg-3">Our Value</button>
                     
                 </div>
 
@@ -205,30 +230,33 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-4">
+                    <div class="col-4 col-lg-4 aboutUs__container--button">
                         <button type="button" class="btn btn-secondary">Contact Us!</button>
                     </div>
                 </div>
             </div>
 
-            <div id="services" class="col-5 aboutUs__container--secondaryChild ">
-                <h6>Services</h6>
-                <h1>Know what we offer you</h1><br />
-
-                <div  class="col-9 about__cards about__cards--1">
-                    <div>
-                        <img width="50" src="resources/img/desing-color-fan-min.png" alt="">
-                    </div>
-                    <div>
-                        <h4>
-                            Interior Desing
-                        </h4>
-                        <p>
-                            We desing the best interiors for you home full of styles an confort
-                        </p>
-                    </div>
+            <div id="services" class="col-12 col-lg-5 aboutUs__container--secondaryChild ">
+                <div class="col-12 col-lg-9">
+                    <h6>Services</h6>
+                    <h1>Know what we offer you</h1><br />
                 </div>
-                <div  class="col-9 about__cards about__cards--2">
+
+                <div  class="col-12 col-lg-9 about__cards about__cards--1">
+                                            <div>
+                            <img width="50" src="resources/img/desing-color-fan-min.png" alt="">
+                        </div>
+                        <div>
+                            <h4>
+                                Interior Desing
+                            </h4>
+                            <p>
+                                We desing the best interiors for you home full of styles an confort
+                            </p>
+                        </div>
+                    
+                </div>
+                <div  class="col-12 col-lg-9 about__cards about__cards--2">
                     <div><img width="50" src="resources/img/iconmonstr-wrench-25-120.png" alt=""></div>
                     <div>
                         <h4>Plumbing</h4>
@@ -236,7 +264,7 @@
                     </div>
                 </div>
                 
-                <div style="border: 1px red solid;" class="col-9 about__cards about__cards--3">
+                <div class="col-12 col-lg-9 about__cards about__cards--3">
                     <div><img width="50" src="resources/img/paint-min.png" alt=""></div>
                     <div>
                         <h4>Painting</h4>
@@ -248,7 +276,7 @@
     </div>
 </section>
 
-<section class="container-fluid ourProjetcs">
+<section style="display: none;" class="container-fluid ourProjetcs">
     
     <div id="gallery" class="container ourProjetcs__container">
         <div  class="row">
@@ -258,17 +286,17 @@
             </div>
         </div>
         <div class="row justify-content-center ourProjetcs__container--gallery">
-            <div class=""><img width="150" src="resources/img/person_2.jpg" alt=""></div>
-            <div class=""><img width="150" src="resources/img/person_2.jpg" alt=""></div>
-            <div class=""><img width="150" src="resources/img/person_2.jpg" alt=""></div>
-            <div class=""><img width="150" src="resources/img/person_2.jpg" alt=""></div>
-            <div class=""><img width="150" src="resources/img/person_2.jpg" alt=""></div>
+            <div class=""><img width="150" src="resources/img/work-5.jpg" alt="work-5"></div>
+            <div class=""><img width="150" src="resources/img/work-6.jpg" alt="work-6"></div>
+            <div class=""><img width="150" src="resources/img/work-7.jpg" alt="work-7"></div>
+            <div class=""><img width="150" src="resources/img/work-8.jpg" alt="work-8"></div>
+            <div class=""><img width="150" src="resources/img/work-1.jpg" alt="work-1"></div>
 
         </div>
 
         <div  class="row justify-content-center ourProjetcs__container--button">
                 <div  class="">
-                    <button type="button" class="btn btn-secondary">View Gallery</button>
+                    <button type="button" class="btn">View Gallery</button>
                 </div>
         </div>
     </div>
@@ -276,7 +304,7 @@
 
 </section>
 
-<section class="container-fluid testimonials">
+<section style="display: none;" class="container-fluid testimonials">
 <div  class="container testimonials__container">
     <div class="row">
         <div  class="col-5 testimonials__container--first-child">
@@ -285,7 +313,9 @@
         </div>
         <div  class="col-7 testimonials__container--second-child">
             <div>
-                <video width="400" height="500" muted  src="resources/video/review-1-v.mp4"></video>    
+                <video width="300" height="300"  loop muted poster="resources/img/person_4.jpg" >
+                    <source src="resources/video/review-1-v.mp4"  type="video/mp4">
+                </video>  
             </div>
                 <div class="col-4">
                     <button type="button" class="btn btn-secondary">JEFF FRESHMAN</button>
@@ -295,7 +325,7 @@
 </div>
 </section>
 
-<section class="container-fluid socialMedia">
+<section style="display: none;" class="container-fluid socialMedia">
     <div id="contacUs"  class="container socialMedia__container">
         <div class="row">
             <div class="col-6">
@@ -304,9 +334,6 @@
             </div>
             <div class="row socialMedia__container--icons ">
                 <div class="col">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </div>
-                <div class="col">
                     <ion-icon name="logo-twitter"></ion-icon>
                 </div>
                 <div class="col">
@@ -314,6 +341,9 @@
                 </div>
                 <div class="col">
                     <ion-icon name="logo-youtube"></ion-icon>
+                </div>
+                <div class="col">
+                    <ion-icon name="logo-instagram"></ion-icon>
                 </div>
                 <div class="col">
                     <ion-icon name="logo-linkedin"></ion-icon>
@@ -325,8 +355,8 @@
                 </h3>
                 
                 <div class="socialMedia__container--newsletter--email">
-                    <input type="email" placeholder="Enter email addrees">
-                    <button type="button" class="btn btn-warning">Warning</button>
+                    <input type="email" placeholder="Enter email address">
+                    <button type="button" class="btn btn-warning">Subscribe</button>
                 </div>
             </div>
         </div>
@@ -334,7 +364,7 @@
 </section>
 
 
-<section class="container-fluid footer__contact">
+<section style="display: none;" class="container-fluid footer__contact">
 <div class="container footer__contact--container">
     <div class="row justify-content-center">
         <div   class="col-4">
@@ -404,7 +434,7 @@
 </div>
 </section>
 
-<section class="container-fluid footer__final">
+<section style="display: none;" class="container-fluid footer__final">
     <div class="container footer__final--container">
         <div  class="row justify-content-center">
             <div  class="col-5">

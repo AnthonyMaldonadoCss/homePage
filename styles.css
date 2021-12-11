@@ -2,9 +2,11 @@
     --button-background-color: #061437;
     --fuente-color-oscuro: #061437;
     --background-color-oscuro: #040e27;
+    --background-color-oscuro-hero: #040e2793;
     --fuente-color: #fb7400;
+    --background-testimonials: #f8f9fb;
     --fuente-color-claro-footer: #63b0b2;
-    --background-about-us: #e6e6e6;
+    --background-about-us: #ececec;
     --background--color--aboutUs-1: #e6e6e6;
 }
 
@@ -26,6 +28,9 @@
 .footer__final{
     height: 20vh;
 }
+.header__container{
+    padding: 20px 0 15px 0 ;
+}
 
 .header__form--container, .welcome__container, .aboutUs__container{
     transform: translate(0px, 120px);
@@ -45,6 +50,18 @@
     transform: translate(0px, 25px);
 }
 
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
 /*COLORES*/
 
 .header{
@@ -56,7 +73,25 @@
 .header__container div p{
     color: #fff
 }
-
+.header__container--3 div:nth-child(2){
+    color: #fff;
+    font-size: 165%;
+}
+.header__container--4 div:nth-child(1){
+    display: flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.header__container--4 div h4{
+    margin: 0 15px 0 0;
+}
+.header__container--4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
 
 .header__nav--bar nav div ul li a{
     color:#fb7400;
@@ -68,7 +103,7 @@
     margin: 0px 10px 0px 10px;
 }
 .header__form{
-    background-color: grey;
+    background-color: var(--background-color-oscuro-hero);
     background-position: center;
     background-size: cover;
 }
@@ -90,6 +125,12 @@
 
 .formulario h2{
     color:var(--button-background-color)
+}
+.header__form, .welcome, .aboutUs, .ourProjetcs, .testimonials, .socialMedia, .footer__contact{
+    font-family: 'Readex Pro';
+}
+.formulario{
+    padding: 50px 15px 50px 15px;
 }
 
 .formulario div input{
@@ -116,7 +157,9 @@
     color: #fff;
     font-weight: 800;
 }
-
+.welcome{
+    background-color: whitesmoke;
+}
 .welcome__container div h6{
     color: var(--fuente-color)
 }
@@ -146,8 +189,12 @@
 .aboutUs__container--buttons button{
     background-color: var(--fuente-color);
 }
+.aboutUs__container--button{
+    display: flex;
+    justify-content: center;
+}
 .aboutUs__container--longCopy{
-    border-radius: 15px;
+    border-radius: 10px;
     background: #e6e6e6;
     box-shadow:  -5px -5px 15px #b3b3b3,
              5px 5px 15px #ffffff;
@@ -155,18 +202,27 @@
              margin: 25px 0 25px 0;
              padding: 0 20px 0 20px;         
 }
-.about__cards--1{
-    background-color: var(--background--color--aboutUs-1);
+.aboutUs__container--longCopy p {
+    padding: 25px;
 }
+
 .about__cards--1 div:nth-child(1), .about__cards--2 div:nth-child(1), .about__cards--3 div:nth-child(1){
     
     margin: 0 30px 0 0;
 }
+.about__cards--1{
+    background-color: var(--background--color--aboutUs-1);
+    font-size: 90%;
+}
 .about__cards--2{
     background-color: var(--fuente-color);
+    color: #fff;
+    font-size: 90%;
 }
 .about__cards--3{
     background-color: var(--button-background-color);
+    color: #fff;
+    font-size: 90%;
 }
 
 .ourProjetcs__container div:nth-child(1) p{
@@ -178,7 +234,8 @@
     color: #fff;
 }
  .ourProjetcs{
-     background-color: var(--button-background-color);
+     /* background-color: var(--button-background-color); */
+     background-color: #1e263b;
  }
 
  .ourProjetcs__container--gallery div{
@@ -187,6 +244,20 @@
 
  .ourProjetcs__container--button{
     margin: 30px 0 0 0;
+    
+}
+.ourProjetcs__container--button button{
+    background-color: #09132c;
+    color: #fff;
+}
+.testimonials{
+    background-color: var(--background-testimonials);
+    color: #fff;
+}
+.testimonials__container{
+    background: linear-gradient(to right bottom, #061437bb, #040e2793), url("resources/img/bg_1.jpg") ;
+    background-size: cover;
+
 }
 
 .testimonials__container div:nth-child(1) {
@@ -200,6 +271,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.socialMedia{
+    background-color: #fff
 }
 
 .socialMedia__container--icons div ion-icon{
@@ -224,18 +298,38 @@
     background-color: var(--fuente-color);
     border-radius: 5px;
 }
+.socialMedia__container--newsletter{
+    color: #fff;
+}
 .socialMedia__container--newsletter--email{
     display: flex;
     justify-content: space-evenly;
     align-items: stretch;
 }
+.socialMedia__container--newsletter--email input{
+    border-radius: 3px;
+    border: unset;
+}
+.socialMedia__container--newsletter--email button{
+    color: #fff;
+    font-weight: 100;
+    font-size: 90%;
+}
 
 .footer__contact{
     background-color: var(--button-background-color);
 }
-.footer__contact--container div ul h4, li{
+.footer__contact--container div ul li{
     color: #fff;
     list-style: none;
+    transition: all .2s;
+}
+.footer__contact--container div ul li:hover{
+    text-decoration: underline solid var(--fuente-color) 2px;
+    cursor: pointer;
+}
+.footer__contact--container div ul h4{
+    color: var(--fuente-color);
 }
 
 .footer__contact--container div ul{
@@ -286,9 +380,86 @@
     align-items: flex-start;
     justify-content: space-between;
 }
-ion-icon {
+/* ion-icon {
     font-size: 14px;
-}
+} */
 .footer  ul li{
     list-style: none;
+}
+
+/*MEDIA QUERYS*/
+
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    #background-video {
+       display: none;
+      }
+
+    .header__form{
+        height: 175vh;
+    }
+
+    .header__container--row div{
+        text-align: center;
+    }
+
+    .welcome{
+        height: 100vh;
+    }
+    .welcome__container--row div:nth-child(1) img{
+        width: 100%;
+        height: 100%;
+    }
+    .welcome__container--row div:nth-child(2) img{
+        width: 100%;
+        height: 100%;
+    }
+    .welcome__container--longCopy{
+        text-align: left;
+    }
+    .aboutUs{
+        height: 220vh;
+    }
+ }
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    *{
+        color: red;
+    }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .welcome__container div img{
+        width: 200px;
+        height: 200px;
+    }
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+    .welcome{
+        height: 120vh;
+    }
+    
+    .welcome__container--row div:nth-child(1) img{
+        width: 300px;
+        height: 400px;
+    }
+
+    .welcome__container--row div:nth-child(2) img{
+        width: 100px;
+        height: 100px;
+    }
+    .welcome__container--longCopy--img{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .aboutUs{
+        height: 120vh;
+    }
 }
