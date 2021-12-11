@@ -26,7 +26,7 @@
             <div class="row header__container--row">
                 
             
-                <div  class="col-12 col-sm-12 col-xl-4 col-lg-3">
+                <div  class="col-12 col-sm-12 col-lg-3 col-xl-2">
                     <img src="resources/img/LOGO-many.png" width="150" class="img-thumbnail" alt="silvera">
                 </div>
                     <!-- <div class="col-xs-1 col-1">
@@ -44,7 +44,7 @@
             
                     </div> -->
         
-                <div  class="col-12 col-sm-4 col-lg-3 col-xl-4 header__container--3">
+                <div  class="col-12 col-sm-4 col-lg-3 col-xl-3 header__container--3">
                     <div>
                         <h4>Follow us</h4>
                         <div>
@@ -72,8 +72,15 @@
     
     
     <div class="header__nav--bar">
-        <nav class="navbar navbar-nav navbar-expand-sm bg-light">
-        <div class="nav justify-content-center navbar-collapse" id="navbarNav">
+        <nav class="navbar navbar-expand-lg navbar-expand-lg bg-light navbar-light">
+             <a class="navbar-brand header__nav--bar--brand" href="#">
+                <img width="100" src="resources/img/Logo-JS-White-Wshadow.png" alt="">
+             </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse justify-content-center navbar-collapse header__nav--bar--list" id="navbarSupportedContent">
               <ul class="navbar-nav">
                 <li class="nav-item active">
                   <a class="nav-link" href="#home">Home</a>
@@ -154,7 +161,7 @@
     </div>
 </section>
 
-<section style="display: none;" class="container-fluid welcome">
+<section  class="container-fluid welcome">
     <div id="welcome" class="container welcome__container">
         <div class="row welcome__container--row">
                 
@@ -221,7 +228,7 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-11 aboutUs__container--longCopy">
+                    <div class="col-12 col-lg-11 col-lx-11 aboutUs__container--longCopy">
                         <p>We are an expert group in architectural desing and interior desing with a residential approach,
                             where we generate creative, authentic and innovate solutions, achieving results that exceed the expectations
                             of each client.
@@ -229,8 +236,8 @@
                     </div>
                 </div>
 
-                <div class="row justify-content-center">
-                    <div class="col-4 col-lg-4 aboutUs__container--button">
+                <div class="row">
+                    <div class="col-6 col-lg-4 aboutUs__container--button">
                         <button type="button" class="btn btn-secondary">Contact Us!</button>
                     </div>
                 </div>
@@ -276,11 +283,11 @@
     </div>
 </section>
 
-<section style="display: none;" class="container-fluid ourProjetcs">
+<section class="container-fluid ourProjetcs">
     
     <div id="gallery" class="container ourProjetcs__container">
         <div  class="row">
-            <div class="col-sm">
+            <div class="col-12 col-lg-5">
                 <p>our projetcs</p>
                 <h1>know what we do</h1>
             </div>
@@ -304,20 +311,20 @@
 
 </section>
 
-<section style="display: none;" class="container-fluid testimonials">
+<section  class="container-fluid testimonials">
 <div  class="container testimonials__container">
     <div class="row">
-        <div  class="col-5 testimonials__container--first-child">
+        <div  class="col-12 col-lg-5 testimonials__container--first-child">
             <p>view testimonials</p>
             <h1>FOR US IT IS VERY IMPORTANT TO KNOW THE OPINIONS OF OUR CLIENTS</h1>
         </div>
-        <div  class="col-7 testimonials__container--second-child">
+        <div  class="col-12 col-lg-7 testimonials__container--second-child">
             <div>
-                <video width="300" height="300"  loop muted poster="resources/img/person_4.jpg" >
+                <video width="300" height="300" controls loop muted poster="resources/img/person_4.jpg" >
                     <source src="resources/video/review-1-v.mp4"  type="video/mp4">
                 </video>  
             </div>
-                <div class="col-4">
+                <div class="col col-lg-4">
                     <button type="button" class="btn btn-secondary">JEFF FRESHMAN</button>
                 </div>
         </div>
@@ -325,38 +332,41 @@
 </div>
 </section>
 
-<section style="display: none;" class="container-fluid socialMedia">
+<section  class="container-fluid socialMedia">
     <div id="contacUs"  class="container socialMedia__container">
         <div class="row">
-            <div class="col-6">
+            
+            <div class="col-12 col-lg-6">
                 <h6>OUR SOCIAL MEDIA</h6>
                 <h1>Follow us on Social Media</h1>
             </div>
-            <div class="row socialMedia__container--icons ">
-                <div class="col">
+            
+            <div class="col-12 col-lg-6 socialMedia__container--icons">
+                <div class="">
                     <ion-icon name="logo-twitter"></ion-icon>
                 </div>
-                <div class="col">
+                <div class="">
                     <ion-icon name="logo-facebook"></ion-icon>
                 </div>
-                <div class="col">
+                <div class="">
                     <ion-icon name="logo-youtube"></ion-icon>
                 </div>
-                <div class="col">
+                <div class="">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </div>
-                <div class="col">
+                <div class="">
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </div>
             </div>
-            <div   class="socialMedia__container--newsletter col-12">
+            <div   class="socialMedia__container--newsletter col-12 col-lg-12">
                 <h3>
                     Subscribe to our newsletter
                 </h3>
                 
                 <div class="socialMedia__container--newsletter--email">
                     <input type="email" placeholder="Enter email address">
-                    <button type="button" class="btn btn-warning">Subscribe</button>
+                    <button type="button" class="btn btn-warning desktop">Subscribe</button>
+                    <button type="button" class="btn btn-warning  mobile"> > </button>
                 </div>
             </div>
         </div>
@@ -364,10 +374,10 @@
 </section>
 
 
-<section style="display: none;" class="container-fluid footer__contact">
+<section  class="container-fluid footer__contact">
 <div class="container footer__contact--container">
-    <div class="row justify-content-center">
-        <div   class="col-4">
+    <div class="row">
+        <div   class="col-12 col-lg-4">
             
             <ul>
                 <h4>Office Contact</h4>
@@ -390,7 +400,7 @@
             </ul>
         </div>
     
-        <div  class="col-4">
+        <div  class="col-12 col-lg-4">
             
             <ul>
                 <h4>Services Areas</h4>
@@ -412,7 +422,7 @@
             </ul>
         </div>
     
-        <div  class="col-4">
+        <div  class="col-12 col-lg-4">
             
             <ul>
                 <h4>Useful Pages</h4>
@@ -434,13 +444,12 @@
 </div>
 </section>
 
-<section style="display: none;" class="container-fluid footer__final">
+<section  class="container-fluid footer__final">
     <div class="container footer__final--container">
         <div  class="row justify-content-center">
-            <div  class="col-5">
+            <div  class="col-12 col-lg-5">
                 <p>&#9400 Copyright <span>Company Name</span>. All Rights Reserved</p>
                 <p>This website was desingned and Developed by <a href="#">Joseilvera.com</a> </p>
-
             </div>
         </div>
     </div>

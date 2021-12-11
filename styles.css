@@ -277,7 +277,7 @@
 }
 
 .socialMedia__container--icons div ion-icon{
-    font-size: 80px;
+    /* font-size: 80px; */
     color: var(--fuente-color-oscuro);
 }
 
@@ -390,7 +390,10 @@
 /*MEDIA QUERYS*/
 
  /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
+
+
+
+ @media (max-width: 575.98px) { 
     #background-video {
        display: none;
       }
@@ -398,13 +401,21 @@
     .header__form{
         height: 175vh;
     }
+    .header__nav--bar--brand{
+        background-color: var(--button-background-color);
+    }
+    .header__nav--bar--list ul li:hover{
+        border-bottom: 1px solid red;
+    }
 
     .header__container--row div{
         text-align: center;
     }
 
     .welcome{
-        height: 100vh;
+        height: 200vh;
+        position: relative;
+        
     }
     .welcome__container--row div:nth-child(1) img{
         width: 100%;
@@ -418,10 +429,75 @@
         text-align: left;
     }
     .aboutUs{
-        height: 220vh;
+        height: 270vh;
+        padding: 50px 0 50px 0;
     }
- }
+    .aboutUs__container--buttons button:nth-child(3){
+        margin: 20px 0 0 0;
+    }
+    .aboutUs__container--secondaryChild{
+        margin: 20px 0 0 0;
+    }
+    .aboutUs__container--button{
+        text-align: left;
+    }
+    .aboutUs__container--secondaryChild div h1 {
+        font-size: 180%;
+    }
+    .aboutUs__container--secondaryChild div h6{
+        font-size: 100%;
+    }
+    .aboutUs__container--longCopy p{
+        padding: 25px 0 25px 0;
+    }
 
+    .ourProjetcs{
+        height: 165vh;
+    }
+    .testimonials__container {
+        height: 85vh;
+    }
+    .testimonials__container--first-child h1{
+        font-size: 130%;
+    }
+    .testimonials__container--second-child video{
+        width: 200px;
+        height: 200px;
+    }
+    .socialMedia{
+        height: 80vh;
+    }
+    .socialMedia__container--icons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .socialMedia__container--icons div ion-icon {
+        font-size: 100%;
+    }
+    .socialMedia__container--newsletter h3{
+        font-size: 100%;
+    }
+    .socialMedia__container--newsletter input{
+        width: 100%;
+    }
+    .socialMedia__container--newsletter--email .desktop {
+        display: none;
+    
+    }
+    .footer__contact{
+        height: 120vh;
+    }
+    .footer__contact--container__socialMedia {
+        justify-content: space-between;
+    }
+    .footer__contact--container__socialMedia div ul{
+        text-align: left;
+    }
+    .footer__final{
+        height: 30vh;
+    }
+}
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
     *{
@@ -429,6 +505,10 @@
     }
  }
 
+ 
+ 
+ 
+ 
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
     .welcome__container div img{
@@ -437,23 +517,37 @@
     }
  }
 
+ 
+ 
+ 
+ 
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
     
-    .welcome{
+    .header__nav--bar--brand{
+        background-color: var(--button-background-color);
+    }
+    .header__nav--bar--list ul li{
+        transition: all .3s;
+    }
+    .header__nav--bar--list ul li:hover{
+        border-bottom: 2px solid var(--fuente-color);
+    }
+    
+    .welcome {
         height: 120vh;
     }
     
-    .welcome__container--row div:nth-child(1) img{
+    .welcome__container--row div:nth-child(1) img {
         width: 300px;
         height: 400px;
     }
 
-    .welcome__container--row div:nth-child(2) img{
+    .welcome__container--row div:nth-child(2) img {
         width: 100px;
         height: 100px;
     }
-    .welcome__container--longCopy--img{
+    .welcome__container--longCopy--img {
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -461,5 +555,36 @@
 
     .aboutUs{
         height: 120vh;
+    }
+
+    .ourProjetcs{
+        height: 70vh;
+    }
+    .testimonials__container{
+        padding: 20px 0 20px 0;
+    }
+    .testimonials__container {
+        transform: translate(0px, 50px);
+    }
+    .testimonials__container--second-child video{
+        width: 250px;
+        height: 250px;
+    }
+    .socialMedia{
+        height: 100vh;
+    }
+
+    .socialMedia__container--icons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .socialMedia__container--icons div ion-icon {
+        font-size: 350%;
+    }
+    
+    .socialMedia__container--newsletter--email .mobile{
+        display: none;
     }
 }
