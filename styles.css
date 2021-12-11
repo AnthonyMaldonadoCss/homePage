@@ -403,7 +403,7 @@
       }
 
     .header__form{
-        height: 175vh;
+        height: 200vh;
     }
     .header__nav--bar--brand{
         background-color: var(--button-background-color);
